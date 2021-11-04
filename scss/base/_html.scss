@@ -12,11 +12,12 @@ html {
 }
 
 body {
+  @include antialias();
   min-width: 100vw;
   min-height: 100vh;
   line-height: 1.6em;
   font-family: var(--body-font-family);
-  color: var(--text-color);
+  color: var(--grayish-blue);
   background-color: rgb(238, 238, 238);
 }
 
@@ -28,7 +29,7 @@ h4,
 h5,
 h6,
 p {
-  max-width: 60ch;
+  // max-width: 60ch;
 }
 
 h1,
@@ -42,8 +43,9 @@ h6 {
 }
 
 h1 {
-  font-size: var(--h1-font-size);
+  font-size: 1.9rem;
   line-height: 1.2em;
+  color: var(--dark-desaturated-blue);
 }
 
 h2 {
