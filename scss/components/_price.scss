@@ -1,1 +1,11 @@
 @use "../index" as *;
+
+.price {
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.price__container {
+  padding: 3rem;
+}
