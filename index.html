@@ -16,6 +16,67 @@
     <title>Interactive Price Component</title>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <main class="container">
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="subtitle">Sign up for our 3o-day trial. No credit card required.</p>
+
+      <!-- ========================== § PRICE COMPONENT === -->
+      <div class="price">
+        <!-- FIRS HALF -->
+        <div class="price__price-timespan-container">
+          <!-- PAGEVIEWS -->
+          <div class="price__price-container">
+            <p class="uppercase price__pageviews">100k Pageviews</p>
+            <p><span class="price__current-price">16.00</span>/<span class="price__timespan">month</span></p>
+          </div>
+
+          <!-- RANGE -->
+          <div class="price__range-container">
+            <input id="price__range" class="price__range" type="range" min="1" max="5" value="3" step="1" />
+            <label for="price__range">Pageviews</label>
+          </div>
+
+          <!-- TIMESPAN -->
+          <div class="price__timespan-container">
+            <!-- Monthly -->
+            <div class="price__toggle-container">
+              <label class="price__toggle-label" for="monthly-billing">Monthly</label>
+              <input type="radio" id="monthly-billing" name="price-toggle" class="toggle price__toggle" />
+            </div>
+
+            <!-- Yearly -->
+            <div class="price__toggle-container">
+              <input type="radio" id="yearly-billing" name="price-toggle" class="toggle price__toggle" />
+              <label class="price__toggle-label" for="yearly-billing"
+                >Yearly <span class="label--light-red price__discount">25% <span class="price__discount__no-mobile">discount</span></span>
+              </label>
+            </div>
+            <!-- end toggle container -->
+          </div>
+          <!-- end timespan-container -->
+        </div>
+        <!-- end price container -->
+
+        <hr />
+
+        <!-- SECOND HALF -->
+        <div class="price__caveat-container">
+          <!-- LIST -->
+          <ul class="list--icon price__caveat__list">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+
+          <!-- BUTTON -->
+          <div class="price__caveat__button-container">
+            <button class="button--dark price__caveat__button">Start my trial</button>
+          </div>
+        </div>
+        <!-- end caveat-container -->
+      </div>
+      <!-- end price -->
+    </main>
+    <!-- end container -->
   </body>
 </html>
