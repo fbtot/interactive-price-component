@@ -160,4 +160,9 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.container {
+  width: 540px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=main.css.map */
