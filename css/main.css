@@ -15,7 +15,7 @@
   --grey300: hsl(0, 0%, 70%);
   --grey500: hsl(0, 0%, 50%);
   --base-font-size: 15px;
-  --small-font-size: 14.4px;
+  --small-font-size: 12px;
   --line-height: 1.6em;
   --body-font-family: "Manrope", sans-serif;
   --headings-font-family: var(--body-font-family);
@@ -183,6 +183,22 @@ input[type=submit] {
 
 .price__container {
   padding: 3rem;
+}
+
+.button, .button--dark {
+  font-size: var(--small-font-size);
+  border: none;
+  border-radius: 100px;
+  padding: 0.8rem;
+}
+
+.button--dark {
+  background-color: var(--dark-desaturated-blue);
+  color: var(--light-grayish-blue);
+  font-weight: bold;
+}
+.button--dark:hover {
+  color: white;
 }
 
 .container {
