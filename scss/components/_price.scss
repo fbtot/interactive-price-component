@@ -63,6 +63,29 @@
   }
 }
 
+.price__range {
+  margin: 3rem 0;
+  width: 100%;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+
+  &::-webkit-slider-thumb {
+    @include circle(2.7rem);
+    margin-top: -1rem;
+    background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
+    box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include circle();
+    background: var(--light-grayish-blue);
+    height: 0.5rem;
+    -webkit-appearence: none;
+  }
+}
+
 .price__range__label {
   @extend %hide-visually;
 }

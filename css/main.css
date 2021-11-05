@@ -7,7 +7,7 @@
   --pale-blue: hsl(226, 100%, 87%);
   --very-pale-blue: hsl(230, 100%, 99%);
   --light-grayish-blue: hsl(224, 65%, 95%);
-  --light-grayish-blue: hsl(223, 50%, 87%);
+  --light-grayish-blue2: hsl(223, 50%, 87%);
   --grayish-blue: hsl(225, 20%, 60%);
   --dark-desaturated-blue: hsl(227, 35%, 25%);
   --text-color: hsl(0, 0%, 7%);
@@ -269,6 +269,33 @@ input[type=submit] {
   .price__range-container {
     order: 2;
   }
+}
+
+.price__range {
+  margin: 3rem 0;
+  width: 100%;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+.price__range::-webkit-slider-thumb {
+  /* @mixin circle */
+  border-radius: 1000px;
+  width: 2.7rem;
+  height: 2.7rem;
+  /* end @mixin circle */
+  margin-top: -1rem;
+  background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
+  box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
+  -webkit-appearance: none;
+}
+.price__range::-webkit-slider-runnable-track {
+  /* @mixin circle */
+  border-radius: 1000px;
+  /* end @mixin circle */
+  background: var(--light-grayish-blue);
+  height: 0.5rem;
+  -webkit-appearence: none;
 }
 
 .price__timespan-container {
