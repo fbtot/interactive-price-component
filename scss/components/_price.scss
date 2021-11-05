@@ -78,8 +78,13 @@
     -webkit-appearance: none;
     cursor: grab;
 
+    &:hover {
+      background-color: var(--soft-cyan);
+    }
+
     &:active {
       cursor: grabbing;
+      background-color: #20a497;
     }
   }
 

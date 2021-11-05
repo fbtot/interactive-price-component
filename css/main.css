@@ -290,8 +290,12 @@ input[type=submit] {
   -webkit-appearance: none;
   cursor: grab;
 }
+.price__range::-webkit-slider-thumb:hover {
+  background-color: var(--soft-cyan);
+}
 .price__range::-webkit-slider-thumb:active {
   cursor: grabbing;
+  background-color: #20a497;
 }
 .price__range::-webkit-slider-runnable-track {
   /* @mixin circle */
