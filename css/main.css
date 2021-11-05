@@ -281,14 +281,15 @@ input[type=submit] {
 .price__range::-webkit-slider-thumb {
   /* @mixin circle */
   border-radius: 1000px;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 2.5rem;
+  height: 2.5rem;
   /* end @mixin circle */
   margin-top: -1rem;
   background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
   box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
   -webkit-appearance: none;
   cursor: grab;
+  border: none;
 }
 .price__range::-webkit-slider-thumb:hover {
   background-color: var(--soft-cyan);
@@ -298,6 +299,62 @@ input[type=submit] {
   background-color: #20a497;
 }
 .price__range::-webkit-slider-runnable-track {
+  /* @mixin circle */
+  border-radius: 1000px;
+  /* end @mixin circle */
+  background: var(--light-grayish-blue);
+  height: 0.5rem;
+  -webkit-appearence: none;
+}
+.price__range::-moz-range-thumb {
+  /* @mixin circle */
+  border-radius: 1000px;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* end @mixin circle */
+  margin-top: -1rem;
+  background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
+  box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
+  -webkit-appearance: none;
+  cursor: grab;
+  border: none;
+}
+.price__range::-moz-range-thumb:hover {
+  background-color: var(--soft-cyan);
+}
+.price__range::-moz-range-thumb:active {
+  cursor: grabbing;
+  background-color: #20a497;
+}
+.price__range::-moz-range-track {
+  /* @mixin circle */
+  border-radius: 1000px;
+  /* end @mixin circle */
+  background: var(--light-grayish-blue);
+  height: 0.5rem;
+  -webkit-appearence: none;
+}
+.price__range::-ms-thumb {
+  /* @mixin circle */
+  border-radius: 1000px;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* end @mixin circle */
+  margin-top: -1rem;
+  background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
+  box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
+  -webkit-appearance: none;
+  cursor: grab;
+  border: none;
+}
+.price__range::-ms-thumb:hover {
+  background-color: var(--soft-cyan);
+}
+.price__range::-ms-thumb:active {
+  cursor: grabbing;
+  background-color: #20a497;
+}
+.price__range::-ms-track {
   /* @mixin circle */
   border-radius: 1000px;
   /* end @mixin circle */
