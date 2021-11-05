@@ -9,3 +9,51 @@
 .price__container {
   padding: 3rem;
 }
+
+.price__price-container,
+.price__caveat-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq($desktop-width, down) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include mq($desktop-width, up) {
+    justify-content: space-between;
+  }
+}
+
+.price__pageviews {
+  @include mq($desktop-width, down) {
+    order: 1;
+  }
+}
+
+.price__current-price {
+  @include mq($desktop-width, down) {
+    order: 3;
+  }
+}
+
+.price__range-container {
+  flex: 1 0 100%;
+
+  @include mq($desktop-width, down) {
+    order: 2;
+  }
+}
+
+.price__range__label {
+  @extend %hide-visually;
+}
+
+.price__timespan-container {
+  display: flex;
+  justify-content: center;
+}
+
+.price__caveat-container {
+  align-items: center;
+}
