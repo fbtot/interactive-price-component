@@ -7,7 +7,7 @@
 }
 
 .price__container {
-  padding: 3rem;
+  padding: 3.9rem 3rem;
 }
 
 .price__price-container,
@@ -25,7 +25,11 @@
   }
 }
 
+/* ========================== § PRICE SECTION === */
 .price__pageviews {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.09em;
   @include mq($desktop-width, down) {
     order: 1;
   }
@@ -35,8 +39,22 @@
   @include mq($desktop-width, down) {
     order: 3;
   }
+
+  @include mq($desktop-width, up) {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.price__price {
+  margin-right: 1rem;
+  font-size: 2.7rem;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  color: var(--dark-desaturated-blue);
+}
+
+/* ========================== § RANGE === */
 .price__range-container {
   flex: 1 0 100%;
 

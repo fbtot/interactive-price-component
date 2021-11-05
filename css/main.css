@@ -193,7 +193,7 @@ input[type=submit] {
 }
 
 .price__container {
-  padding: 3rem;
+  padding: 3.9rem 3rem;
 }
 
 .price__price-container,
@@ -219,7 +219,11 @@ input[type=submit] {
   }
 }
 
+/* ========================== § PRICE SECTION === */
 .price__pageviews {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.09em;
   /* mixin mq */
   /* end mixin mq */
 }
@@ -232,13 +236,30 @@ input[type=submit] {
 .price__current-price {
   /* mixin mq */
   /* end mixin mq */
+  /* mixin mq */
+  /* end mixin mq */
 }
 @media screen and (max-width: 799px) {
   .price__current-price {
     order: 3;
   }
 }
+@media screen and (min-width: 800px) {
+  .price__current-price {
+    display: flex;
+    align-items: center;
+  }
+}
 
+.price__price {
+  margin-right: 1rem;
+  font-size: 2.7rem;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  color: var(--dark-desaturated-blue);
+}
+
+/* ========================== § RANGE === */
 .price__range-container {
   flex: 1 0 100%;
   /* mixin mq */
