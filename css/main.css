@@ -288,6 +288,10 @@ input[type=submit] {
   background: var(--strong-cyan) url(../images/icon-slider.svg) center center no-repeat;
   box-shadow: 0 1.5rem 1.5rem var(--soft-cyan);
   -webkit-appearance: none;
+  cursor: grab;
+}
+.price__range::-webkit-slider-thumb:active {
+  cursor: grabbing;
 }
 .price__range::-webkit-slider-runnable-track {
   /* @mixin circle */
