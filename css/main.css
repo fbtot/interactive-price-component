@@ -242,6 +242,7 @@ input[type=submit] {
 @media screen and (max-width: 799px) {
   .price__current-price {
     order: 3;
+    margin-bottom: 2.5rem;
   }
 }
 @media screen and (min-width: 800px) {
@@ -366,8 +367,57 @@ input[type=submit] {
 .price__timespan-container {
   display: flex;
   justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  transform: translateX(4.5ch);
+  font-size: var(--small-font-size);
+}
+.price__timespan-container:hover .price__toggle {
+  background: var(--strong-cyan);
 }
 
+.price__toggle-container, .price__toggle-container--right, .price__toggle-container--left {
+  -webkit-appearance: none;
+}
+
+.price__toggle {
+  -webkit-appearance: none;
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--light-grayish-blue2);
+  border: none;
+  cursor: pointer;
+  transition: left 0.2s;
+}
+.price__toggle-container--left .price__toggle:after, .price__toggle-container--right .price__toggle:after {
+  top: 0.2rem;
+  content: "";
+  position: absolute;
+  transition: left 0.3s;
+  /* @mixin circle */
+  border-radius: 1000px;
+  width: 1.1rem;
+  height: 1.1rem;
+  /* end @mixin circle */
+}
+.price__toggle-container--left .price__toggle {
+  border-radius: 100px 0 0 100px;
+  z-index: 10;
+}
+.price__toggle-container--left .price__toggle:after {
+  left: 1.6rem;
+  background-color: #fff;
+}
+.price__toggle-container--left .price__toggle:checked:after {
+  left: 0.2rem;
+}
+.price__toggle-container--right .price__toggle {
+  transform: translateX(-1px);
+  border-radius: 0 100px 100px 0;
+}
+
+/* ========================== § PRICE CAVEAT === */
 .price__caveat-container {
   align-items: center;
 }
