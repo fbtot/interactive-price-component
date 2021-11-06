@@ -433,10 +433,10 @@ input[type=submit] {
 }
 
 .price__toggle-container--left .price__toggle-label {
-  margin-right: 1rem;
+  padding-right: 1rem;
 }
 .price__toggle-container--right .price__toggle-label {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .price__discount {

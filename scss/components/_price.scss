@@ -59,11 +59,11 @@
 @mixin label-specular-styles($position) {
   $margin: 1rem;
   @if $position == "right" {
-    margin-left: 1rem;
+    padding-left: 1rem;
   }
 
   @if $position == "left" {
-    margin-right: 1rem;
+    padding-right: 1rem;
   }
 }
 
