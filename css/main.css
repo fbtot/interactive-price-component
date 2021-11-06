@@ -273,7 +273,7 @@ input[type=submit] {
 }
 
 .price__range {
-  margin: 3rem 0;
+  margin: 3rem 0 3.2rem;
   width: 100%;
   border: none;
   background: transparent;
@@ -364,16 +364,26 @@ input[type=submit] {
   -webkit-appearence: none;
 }
 
+.price__range__label {
+  align-items: center;
+}
+
 .price__timespan-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: fit-content;
   margin: 0 auto;
-  transform: translateX(4.5ch);
+  transform: translateX(2.5ch);
   font-size: var(--small-font-size);
 }
 .price__timespan-container:hover .price__toggle {
   background: var(--strong-cyan);
+}
+
+.price__toggle-container, .price__toggle-container--right, .price__toggle-container--left {
+  display: flex;
+  align-content: center;
 }
 
 /* ========================== § PRICE CAVEAT === */
@@ -419,7 +429,13 @@ input[type=submit] {
 }
 .price__toggle-container--right .price__toggle {
   border-radius: 0 100px 100px 0;
-  transform: translateX(1px);
+}
+
+.price__toggle-container--left .price__toggle-label {
+  margin-right: 1rem;
+}
+.price__toggle-container--right .price__toggle-label {
+  margin-left: 1rem;
 }
 
 .button, .button--dark {

@@ -56,6 +56,17 @@
 }
 
 /* ========================== § RANGE === */
+@mixin label-specular-styles($position) {
+  $margin: 1rem;
+  @if $position == "right" {
+    margin-left: 1rem;
+  }
+
+  @if $position == "left" {
+    margin-right: 1rem;
+  }
+}
+
 @mixin slider-thumb() {
   @include circle(2.5rem);
   margin-top: -1rem;
@@ -90,7 +101,7 @@
 }
 
 .price__range {
-  margin: 3rem 0;
+  margin: 3rem 0 3.2rem;
   width: 100%;
   border: none;
   background: transparent;
@@ -126,14 +137,16 @@
 
 .price__range__label {
   @extend %hide-visually;
+  align-items: center;
 }
 
 .price__timespan-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: fit-content;
   margin: 0 auto;
-  transform: translateX(4.5ch);
+  transform: translateX(2.5ch);
   font-size: var(--small-font-size);
   &:hover {
     .price__toggle {
@@ -143,9 +156,12 @@
 }
 
 .price__toggle-container {
-  .price__toggle-container--left {
-    @extend .price__toggle-container;
-  }
+  display: flex;
+  align-content: center;
+}
+
+.price__toggle-container--left {
+  @extend .price__toggle-container;
 }
 
 .price__toggle-container--right {
@@ -194,6 +210,15 @@
 
   .price__toggle-container--right & {
     border-radius: 0 100px 100px 0;
-    transform: translateX(1px); // remove border between the two radio buttons
+  }
+}
+
+.price__toggle-label {
+  .price__toggle-container--left & {
+    @include label-specular-styles("left");
+  }
+
+  .price__toggle-container--right & {
+    @include label-specular-styles("right");
   }
 }
