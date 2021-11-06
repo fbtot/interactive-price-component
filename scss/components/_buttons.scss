@@ -17,3 +17,16 @@
     color: white;
   }
 }
+
+.label {
+  padding: 0.2rem 0.4rem;
+  @include circle();
+  font-weight: bold;
+  font-size: var(--smaller-font-size);
+}
+
+.label--light-red {
+  @extend .label;
+  background: var(--light-grayish-red);
+  color: var(--light-red);
+}

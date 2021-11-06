@@ -16,6 +16,7 @@
   --grey500: hsl(0, 0%, 50%);
   --base-font-size: 15px;
   --small-font-size: 12px;
+  --smaller-font-size: 10.5px;
   --line-height: 1.6em;
   --body-font-family: "Manrope", sans-serif;
   --headings-font-family: var(--body-font-family);
@@ -438,6 +439,10 @@ input[type=submit] {
   margin-left: 1rem;
 }
 
+.price__discount {
+  margin-left: 0.5rem;
+}
+
 .button, .button--dark {
   font-size: var(--small-font-size);
   border: none;
@@ -452,6 +457,20 @@ input[type=submit] {
 }
 .button--dark:hover {
   color: white;
+}
+
+.label, .label--light-red {
+  padding: 0.2rem 0.4rem;
+  /* @mixin circle */
+  border-radius: 1000px;
+  /* end @mixin circle */
+  font-weight: bold;
+  font-size: var(--smaller-font-size);
+}
+
+.label--light-red {
+  background: var(--light-grayish-red);
+  color: var(--light-red);
 }
 
 .container {

@@ -1,5 +1,6 @@
 $base-font-size: 15px;
 $small-font-size: 15px * 0.8;
+$smaller-font-size: 15px * 0.7;
 $desktop-width: 800px;
 $mobile-width: $desktop-width - 1px;
 
@@ -27,6 +28,7 @@ $mobile-width: $desktop-width - 1px;
   // Typography
   --base-font-size: #{$base-font-size};
   --small-font-size: #{$small-font-size};
+  --smaller-font-size: #{$smaller-font-size};
   --line-height: 1.6em;
   --body-font-family: "Manrope", sans-serif;
   --headings-font-family: var(--body-font-family);
