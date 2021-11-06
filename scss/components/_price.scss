@@ -143,61 +143,57 @@
 }
 
 .price__toggle-container {
-  -webkit-appearance: none;
-}
-.price__toggle-container--left {
-  @extend .price__toggle-container;
+  .price__toggle-container--left {
+    @extend .price__toggle-container;
+  }
 }
 
 .price__toggle-container--right {
   @extend .price__toggle-container;
 }
-
-.price__toggle {
-  -webkit-appearance: none;
-  position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: var(--light-grayish-blue2);
-  border: none;
-  cursor: pointer;
-  transition: left 0.2s;
-
-  .price__toggle-container--left &,
-  .price__toggle-container--right & {
-    &:after {
-      top: 0.2rem;
-      content: "";
-      position: absolute;
-      transition: left 0.3s;
-      @include circle(1.1rem);
-    }
-  }
-
-  .price__toggle-container--left & {
-    border-radius: 100px 0 0 100px;
-    z-index: 10;
-    &:after {
-      left: 1.6rem;
-      background-color: #fff;
-    }
-
-    &:checked {
-      &:after {
-        left: 0.2rem;
-        // display: unset;
-      }
-    }
-  }
-
-  .price__toggle-container--right & {
-    transform: translateX(-1px); // remove the white border in the middle of the contaier
-    border-radius: 0 100px 100px 0;
-  }
-}
-
 /* ========================== § PRICE CAVEAT === */
 
 .price__caveat-container {
   align-items: center;
+}
+
+.price__toggle,
+.price__toggle-label {
+  cursor: pointer;
+}
+
+.price__toggle {
+  -webkit-appearance: none;
+  position: relative;
+  background: var(--light-grayish-blue2);
+  width: 1.4rem;
+  height: 1.5rem;
+  border: none;
+
+  .price__toggle-container--left & {
+    width: calc(1.5rem + 2px);
+    border-radius: 100px 0 0 100px;
+    transform: translateX(2px); // remove border between the two radio buttons
+    z-index: 20;
+
+    &:after {
+      transition: 0.3s;
+      @include circle(1rem);
+      content: "";
+      position: absolute;
+      left: 1.7rem;
+      top: 0.2rem;
+      background: white;
+      pointer-events: none;
+    }
+
+    &:checked:after {
+      left: 0.2rem;
+    }
+  }
+
+  .price__toggle-container--right & {
+    border-radius: 0 100px 100px 0;
+    transform: translateX(1px); // remove border between the two radio buttons
+  }
 }

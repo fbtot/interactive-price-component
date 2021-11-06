@@ -376,50 +376,50 @@ input[type=submit] {
   background: var(--strong-cyan);
 }
 
-.price__toggle-container, .price__toggle-container--right, .price__toggle-container--left {
-  -webkit-appearance: none;
+/* ========================== § PRICE CAVEAT === */
+.price__caveat-container {
+  align-items: center;
+}
+
+.price__toggle,
+.price__toggle-label {
+  cursor: pointer;
 }
 
 .price__toggle {
   -webkit-appearance: none;
   position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
   background: var(--light-grayish-blue2);
+  width: 1.4rem;
+  height: 1.5rem;
   border: none;
-  cursor: pointer;
-  transition: left 0.2s;
-}
-.price__toggle-container--left .price__toggle:after, .price__toggle-container--right .price__toggle:after {
-  top: 0.2rem;
-  content: "";
-  position: absolute;
-  transition: left 0.3s;
-  /* @mixin circle */
-  border-radius: 1000px;
-  width: 1.1rem;
-  height: 1.1rem;
-  /* end @mixin circle */
 }
 .price__toggle-container--left .price__toggle {
+  width: calc(1.5rem + 2px);
   border-radius: 100px 0 0 100px;
-  z-index: 10;
+  transform: translateX(2px);
+  z-index: 20;
 }
 .price__toggle-container--left .price__toggle:after {
-  left: 1.6rem;
-  background-color: #fff;
+  transition: 0.3s;
+  /* @mixin circle */
+  border-radius: 1000px;
+  width: 1rem;
+  height: 1rem;
+  /* end @mixin circle */
+  content: "";
+  position: absolute;
+  left: 1.7rem;
+  top: 0.2rem;
+  background: white;
+  pointer-events: none;
 }
 .price__toggle-container--left .price__toggle:checked:after {
   left: 0.2rem;
 }
 .price__toggle-container--right .price__toggle {
-  transform: translateX(-1px);
   border-radius: 0 100px 100px 0;
-}
-
-/* ========================== § PRICE CAVEAT === */
-.price__caveat-container {
-  align-items: center;
+  transform: translateX(1px);
 }
 
 .button, .button--dark {
