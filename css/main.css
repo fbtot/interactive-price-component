@@ -60,7 +60,7 @@ body {
   line-height: 1.6em;
   font-family: var(--body-font-family);
   color: var(--grayish-blue);
-  background-color: #eeeeee;
+  background: var(--very-pale-blue) url(../../images/bg-pattern.svg) 0 0% no-repeat;
 }
 
 /* ========================== § TYPOGRAPHY === */
