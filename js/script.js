@@ -3,6 +3,7 @@
 const priceRangeEl = document.getElementById("price__range");
 const priceTimespanEl = document.getElementById("timespan");
 const priceEl = document.getElementById("price");
+const pageviewsEl = document.getElementById("pageviews");
 
 // Toggle
 const monthlyBillingEl = document.getElementById("monthly-billing");
@@ -40,7 +41,7 @@ const price = class {
   }
 
   get pageviews() {
-    return prices[this.option].pageviews;
+    return prices[this.option].pageviews + " Pageviews";
   }
 
   get cost() {
@@ -62,8 +63,12 @@ function offerSelected() {
 /* ========================== § UPDATE FUNCTION === */
 function updatePrice() {
   const currentPrice = new price(offerSelected(), discountCheck());
+
+  pageviewsEl.innerText = currentPrice.pageviews;
   priceEl.innerText = currentPrice.cost;
 }
+
+updatePrice();
 
 /* ========================== § EVENT LISTENER SLIDER === */
 priceRangeEl.addEventListener("input", function () {
