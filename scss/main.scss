@@ -8,11 +8,11 @@
 @use "./layout/forms" as *;
 
 @use "./components/typography" as *;
-@use "./components/price" as *;
 @use "./components/buttons" as *;
 @use "./components/lists" as *;
 @use "./components/dropdown" as *;
 @use "./components/hero" as *;
+@use "./components/price" as *;
 
 @use "./pages/home" as *;
 @use "./pages/contacts" as *;
