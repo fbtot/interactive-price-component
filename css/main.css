@@ -485,18 +485,55 @@ input[type=submit] {
   position: absolute;
   width: fit-content;
 }
+.price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
+  width: 150px;
+  /* mixin mq */
+  /* end mixin mq */
+}
+@media screen and (max-width: 399px) {
+  .price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
+    width: 50px;
+    line-height: 1.2em;
+  }
+}
 .price__toggle-container--left .price__toggle-label {
-  right: 2.5rem;
-  width: 200px;
   text-align: right;
+  right: 2.5rem;
 }
 .price__toggle-container--right .price__toggle-label {
   left: 2.5rem;
-  width: 200px;
 }
 
 .price__discount {
   margin-left: 0.5rem;
+}
+
+.price__discount--long {
+  /* mixin mq */
+  /* end mixin mq */
+}
+@media screen and (max-width: 799px) {
+  .price__discount--long {
+    display: none;
+  }
+}
+
+.price__discount--short {
+  /* mixin mq */
+  /* end mixin mq */
+  /* mixin mq */
+  /* end mixin mq */
+}
+@media screen and (min-width: 800px) {
+  .price__discount--short {
+    display: none;
+  }
+}
+@media screen and (max-width: 399px) {
+  .price__discount--short {
+    display: inline-block;
+    margin-left: 0;
+  }
 }
 
 /* ========================== § PRICE CAVEAT === */

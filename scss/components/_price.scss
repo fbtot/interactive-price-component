@@ -202,20 +202,45 @@
   position: absolute;
   width: fit-content;
 
+  .price__toggle-container--left &,
+  .price__toggle-container--right & {
+    width: 150px;
+
+    @include mq($very-small-screens, down, true) {
+      width: 50px;
+      line-height: 1.2em;
+    }
+  }
+
   .price__toggle-container--left & {
-    right: 2.5rem;
-    width: 200px;
     text-align: right;
+    right: 2.5rem;
   }
 
   .price__toggle-container--right & {
     left: 2.5rem;
-    width: 200px;
   }
 }
 
 .price__discount {
   margin-left: 0.5rem;
+}
+
+.price__discount--long {
+  @include mq($desktop-width, down) {
+    display: none;
+  }
+}
+
+.price__discount--short {
+  @include mq($desktop-width, up) {
+    display: none;
+  }
+
+  @include mq($very-small-screens, down, true) {
+    display: inline-block;
+    margin-left: 0;
+  }
 }
 
 /* ========================== § PRICE CAVEAT === */
