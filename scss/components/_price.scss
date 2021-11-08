@@ -204,10 +204,12 @@
 
   .price__toggle-container--left &,
   .price__toggle-container--right & {
-    width: 150px;
+    width: 200px;
+    @include mq($desktop-width, down) {
+      width: 130px;
+    }
 
     @include mq($very-small-screens, down, true) {
-      width: 50px;
       line-height: 1.2em;
     }
   }
@@ -238,8 +240,9 @@
   }
 
   @include mq($very-small-screens, down, true) {
-    display: inline-block;
+    display: block;
     margin-left: 0;
+    width: fit-content;
   }
 }
 

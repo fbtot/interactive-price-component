@@ -256,14 +256,14 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__price-container,
 .price__caveat-container {
     flex-direction: column;
     text-align: center;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .price__price-container,
 .price__caveat-container {
     justify-content: space-between;
@@ -282,7 +282,7 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__pageviews {
     order: 1;
   }
@@ -294,13 +294,13 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__current-price {
     order: 3;
     margin-bottom: 2.5rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .price__current-price {
     display: flex;
     align-items: center;
@@ -321,7 +321,7 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__range-container {
     order: 2;
   }
@@ -486,13 +486,19 @@ input[type=submit] {
   width: fit-content;
 }
 .price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
-  width: 150px;
+  width: 200px;
+  /* mixin mq */
+  /* end mixin mq */
   /* mixin mq */
   /* end mixin mq */
 }
+@media screen and (max-width: 499px) {
+  .price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
+    width: 130px;
+  }
+}
 @media screen and (max-width: 399px) {
   .price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
-    width: 50px;
     line-height: 1.2em;
   }
 }
@@ -512,7 +518,7 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__discount--long {
     display: none;
   }
@@ -524,15 +530,16 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .price__discount--short {
     display: none;
   }
 }
 @media screen and (max-width: 399px) {
   .price__discount--short {
-    display: inline-block;
+    display: block;
     margin-left: 0;
+    width: fit-content;
   }
 }
 
@@ -547,7 +554,7 @@ input[type=submit] {
   /* mixin mq */
   /* end mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 499px) {
   .price__caveat__list {
     margin-bottom: 1.5rem;
   }
