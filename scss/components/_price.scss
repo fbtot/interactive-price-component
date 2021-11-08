@@ -241,7 +241,7 @@
   @include mq($desktop-width, down, true) {
     display: block;
     margin-left: 0;
-    width: fit-content;
+    width: 40px;
   }
 }
 
