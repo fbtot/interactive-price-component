@@ -468,7 +468,7 @@ input[type=submit] {
   position: relative;
   background: var(--light-grayish-blue2);
   width: 1.4rem;
-  height: 1.5rem;
+  height: 1.6rem;
   border: none;
 }
 .price__toggle-container--left .price__toggle {
