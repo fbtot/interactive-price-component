@@ -243,6 +243,7 @@ input[type=submit] {
   margin-top: 6rem;
   border-radius: 0.5rem;
   background-color: white;
+  box-shadow: 0 2rem 2rem rgba(35, 110, 223, 0.1);
 }
 
 .price__price-container,
