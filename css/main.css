@@ -469,13 +469,13 @@ input[type=submit] {
   /* end @mixin circle */
   content: "";
   position: absolute;
-  left: 1.7rem;
-  top: 0.2rem;
+  left: 1.6rem;
+  top: 0.25rem;
   background: white;
   pointer-events: none;
 }
 .price__toggle-container--left .price__toggle:checked:after {
-  left: 0.2rem;
+  left: 0.3rem;
 }
 .price__toggle-container--right .price__toggle {
   border-radius: 0 100px 100px 0;
