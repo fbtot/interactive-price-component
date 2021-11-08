@@ -56,17 +56,6 @@
 }
 
 /* ========================== § RANGE === */
-@mixin label-specular-styles($position) {
-  $margin: 1rem;
-  @if $position == "right" {
-    padding-left: 1rem;
-  }
-
-  @if $position == "left" {
-    padding-right: 1rem;
-  }
-}
-
 @mixin slider-thumb() {
   @include circle(2.5rem);
   margin-top: -1rem;
@@ -146,7 +135,6 @@
   align-items: center;
   width: fit-content;
   margin: 0 auto;
-  transform: translateX(2.5ch);
   font-size: var(--small-font-size);
   &:hover {
     .price__toggle {
@@ -157,6 +145,7 @@
 
 .price__toggle-container {
   display: flex;
+  position: relative;
   align-content: center;
 }
 
@@ -214,12 +203,18 @@
 }
 
 .price__toggle-label {
+  position: absolute;
+  width: fit-content;
+
   .price__toggle-container--left & {
-    @include label-specular-styles("left");
+    right: 2.5rem;
+    width: 200px;
+    text-align: right;
   }
 
   .price__toggle-container--right & {
-    @include label-specular-styles("right");
+    left: 2.5rem;
+    width: 200px;
   }
 }
 

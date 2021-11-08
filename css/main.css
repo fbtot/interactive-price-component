@@ -375,7 +375,6 @@ input[type=submit] {
   align-items: center;
   width: fit-content;
   margin: 0 auto;
-  transform: translateX(2.5ch);
   font-size: var(--small-font-size);
 }
 .price__timespan-container:hover .price__toggle {
@@ -384,6 +383,7 @@ input[type=submit] {
 
 .price__toggle-container, .price__toggle-container--right, .price__toggle-container--left {
   display: flex;
+  position: relative;
   align-content: center;
 }
 
@@ -432,11 +432,18 @@ input[type=submit] {
   border-radius: 0 100px 100px 0;
 }
 
+.price__toggle-label {
+  position: absolute;
+  width: fit-content;
+}
 .price__toggle-container--left .price__toggle-label {
-  padding-right: 1rem;
+  right: 2.5rem;
+  width: 200px;
+  text-align: right;
 }
 .price__toggle-container--right .price__toggle-label {
-  padding-left: 1rem;
+  left: 2.5rem;
+  width: 200px;
 }
 
 .price__discount {
