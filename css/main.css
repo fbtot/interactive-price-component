@@ -55,12 +55,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* end @mixin antialias */
+  /* @mixin center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* end @mixin center */
   min-width: 100vw;
   min-height: 100vh;
   line-height: 1.6em;
   font-family: var(--body-font-family);
   color: var(--grayish-blue);
-  background: var(--very-pale-blue) url(../../images/bg-pattern.svg) 0 0% no-repeat;
+  background: var(--very-pale-blue) url(../../images/bg-pattern.svg) 0 0 no-repeat;
+  background-size: contain;
 }
 
 /* ========================== § TYPOGRAPHY === */
@@ -176,7 +182,7 @@ input[type=submit] {
 .container {
   max-width: calc(540px + 4rem);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .title,
@@ -559,10 +565,6 @@ input[type=submit] {
 .price__caveat__button {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.container {
-  padding-top: 7.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
