@@ -174,8 +174,9 @@ input[type=submit] {
 }
 
 .container {
-  width: 540px;
+  max-width: 540px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .title,
