@@ -10,7 +10,6 @@ const prices = {
     pageviews: "10k",
     cost: 8,
   },
-
   2: {
     pageviews: "50k",
     cost: 12,
@@ -44,4 +43,19 @@ const price = class {
   }
 };
 
-const offer = new price(1, true);
+/* ========================== § DISCOUNT CHECK === */
+function discountCheck() {
+  return yearlyBillingEl.checked;
+}
+
+/* ========================== § OFFER SELECTED === */
+function offerSelected() {
+  return priceRangeEl.value;
+}
+
+const offer = new price(offerSelected(), discountCheck());
+
+/* ========================== § EVENT LISTENER SLIDER === */
+priceRangeEl.addEventListener("input", function () {
+  console.log(priceRangeEl.value);
+});
