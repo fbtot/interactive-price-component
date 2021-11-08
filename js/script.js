@@ -1,8 +1,13 @@
 /* ========================== § DOM ELEMENTS === */
+// Price
 const priceRangeEl = document.getElementById("price__range");
 const priceTimespanEl = document.getElementById("timespan");
+const priceEl = document.getElementById("price");
+
+// Toggle
 const monthlyBillingEl = document.getElementById("monthly-billing");
 const yearlyBillingEl = document.getElementById("yearly-billing");
+const toggleElArr = [monthlyBillingEl, yearlyBillingEl];
 
 /* ========================== § DATA === */
 const prices = {
@@ -57,8 +62,7 @@ function offerSelected() {
 /* ========================== § UPDATE FUNCTION === */
 function updatePrice() {
   const currentPrice = new price(offerSelected(), discountCheck());
-
-  console.log(currentPrice.cost);
+  priceEl.innerText = currentPrice.cost;
 }
 
 /* ========================== § EVENT LISTENER SLIDER === */
