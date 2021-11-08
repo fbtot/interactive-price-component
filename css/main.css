@@ -507,6 +507,13 @@ input[type=submit] {
 
 .price__caveat__list {
   font-size: var(--small-font-size);
+  /* mixin mq */
+  /* end mixin mq */
+}
+@media screen and (max-width: 799px) {
+  .price__caveat__list {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .price__caveat__button {

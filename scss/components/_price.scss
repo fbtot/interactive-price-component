@@ -226,6 +226,10 @@
 
 .price__caveat__list {
   font-size: var(--small-font-size);
+
+  @include mq($desktop-width, down) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .price__caveat__button {
