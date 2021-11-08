@@ -503,7 +503,7 @@ input[type=submit] {
   width: fit-content;
 }
 .price__toggle-container--left .price__toggle-label, .price__toggle-container--right .price__toggle-label {
-  width: 200px;
+  width: 205px;
   /* mixin mq */
   /* end mixin mq */
 }
