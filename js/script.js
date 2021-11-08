@@ -65,3 +65,9 @@ priceRangeEl.addEventListener("input", function () {
   console.log(priceRangeEl.value);
   updatePrice();
 });
+
+toggleElArr.forEach((el) => {
+  el.addEventListener("input", function () {
+    updatePrice();
+  });
+});
