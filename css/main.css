@@ -439,11 +439,6 @@ input[type=submit] {
   align-content: center;
 }
 
-.price__caveat-container {
-  align-items: center;
-  padding: 0rem 3rem 3.9rem;
-}
-
 .price__toggle,
 .price__toggle-label {
   cursor: pointer;
@@ -503,6 +498,11 @@ input[type=submit] {
 }
 
 /* ========================== § PRICE CAVEAT === */
+.price__caveat-container {
+  align-items: center;
+  padding: 0rem 3rem 2rem;
+}
+
 .price__caveat__list {
   font-size: var(--small-font-size);
 }
