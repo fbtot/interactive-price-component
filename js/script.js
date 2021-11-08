@@ -1,3 +1,9 @@
+/* ========================== § DOM ELEMENTS === */
+const priceRangeEl = document.getElementById("price__range");
+const priceTimespanEl = document.getElementById("timespan");
+const monthlyBillingEl = document.getElementById("monthly-billing");
+const yearlyBillingEl = document.getElementById("yearly-billing");
+
 /* ========================== § DATA === */
 const prices = {
   1: {
