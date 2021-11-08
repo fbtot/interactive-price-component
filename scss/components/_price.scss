@@ -6,10 +6,6 @@
   background-color: white;
 }
 
-.price__container {
-  padding: 3.9rem 3rem;
-}
-
 .price__price-container,
 .price__caveat-container {
   display: flex;
@@ -26,6 +22,10 @@
 }
 
 /* ========================== § PRICE SECTION === */
+.price__price-timespan-container {
+  padding: 3.9rem 3rem 0;
+}
+
 .price__pageviews {
   text-transform: uppercase;
   font-weight: bold;
@@ -160,6 +160,7 @@
 
 .price__caveat-container {
   align-items: center;
+  padding: 0rem 3rem 3.9rem;
 }
 
 .price__toggle,

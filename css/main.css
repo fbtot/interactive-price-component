@@ -113,7 +113,8 @@ dt {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--grey300);
+  margin: 2.5rem 0;
+  border-bottom: 1px solid var(--light-grayish-blue);
 }
 
 /* ========================== § TABLES === */
@@ -193,10 +194,6 @@ input[type=submit] {
   background-color: white;
 }
 
-.price__container {
-  padding: 3.9rem 3rem;
-}
-
 .price__price-container,
 .price__caveat-container {
   display: flex;
@@ -221,6 +218,10 @@ input[type=submit] {
 }
 
 /* ========================== § PRICE SECTION === */
+.price__price-timespan-container {
+  padding: 3.9rem 3rem 0;
+}
+
 .price__pageviews {
   text-transform: uppercase;
   font-weight: bold;
@@ -390,6 +391,7 @@ input[type=submit] {
 /* ========================== § PRICE CAVEAT === */
 .price__caveat-container {
   align-items: center;
+  padding: 0rem 3rem 3.9rem;
 }
 
 .price__toggle,
