@@ -1,5 +1,8 @@
 @use "../index.scss" as *;
 
+.title-container {
+  position: relative;
+}
 .title,
 .subtitle {
   text-align: center;
@@ -8,4 +11,11 @@
 .title {
   margin-top: 0;
   margin-bottom: 0.8rem;
+}
+
+.title-background {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: -10;
 }

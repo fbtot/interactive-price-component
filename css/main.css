@@ -185,6 +185,10 @@ input[type=submit] {
   padding: 0 2rem;
 }
 
+.title-container {
+  position: relative;
+}
+
 .title,
 .subtitle {
   text-align: center;
@@ -193,6 +197,13 @@ input[type=submit] {
 .title {
   margin-top: 0;
   margin-bottom: 0.8rem;
+}
+
+.title-background {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  z-index: -10;
 }
 
 .button, .button--dark {
