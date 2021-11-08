@@ -72,7 +72,6 @@ updatePrice();
 
 /* ========================== § EVENT LISTENER SLIDER === */
 priceRangeEl.addEventListener("input", function () {
-  console.log(priceRangeEl.value);
   updatePrice();
 });
 
