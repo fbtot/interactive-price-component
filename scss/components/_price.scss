@@ -207,20 +207,19 @@
     width: 200px;
     @include mq($desktop-width, down) {
       width: 130px;
-    }
-
-    @include mq($very-small-screens, down, true) {
       line-height: 1.2em;
     }
   }
 
   .price__toggle-container--left & {
     text-align: right;
-    right: 2.5rem;
+    right: 0rem;
+    padding-right: 2.5rem;
   }
 
   .price__toggle-container--right & {
-    left: 2.5rem;
+    left: 0rem;
+    padding-left: 2.5rem;
   }
 }
 
@@ -239,7 +238,7 @@
     display: none;
   }
 
-  @include mq($very-small-screens, down, true) {
+  @include mq($desktop-width, down, true) {
     display: block;
     margin-left: 0;
     width: fit-content;
