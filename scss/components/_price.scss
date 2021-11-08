@@ -156,7 +156,6 @@
 .price__toggle-container--right {
   @extend .price__toggle-container;
 }
-/* ========================== § PRICE CAVEAT === */
 
 .price__caveat-container {
   align-items: center;
@@ -221,4 +220,9 @@
 
 .price__discount {
   margin-left: 0.5rem;
+}
+
+/* ========================== § PRICE CAVEAT === */
+.price__caveat__list {
+  font-size: var(--small-font-size);
 }

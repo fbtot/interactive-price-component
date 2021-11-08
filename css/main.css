@@ -388,7 +388,6 @@ input[type=submit] {
   align-content: center;
 }
 
-/* ========================== § PRICE CAVEAT === */
 .price__caveat-container {
   align-items: center;
   padding: 0rem 3rem 3.9rem;
@@ -452,6 +451,11 @@ input[type=submit] {
   margin-left: 0.5rem;
 }
 
+/* ========================== § PRICE CAVEAT === */
+.price__caveat__list {
+  font-size: var(--small-font-size);
+}
+
 .button, .button--dark {
   font-size: var(--small-font-size);
   border: none;
@@ -480,6 +484,27 @@ input[type=submit] {
 .label--light-red {
   background: var(--light-grayish-red);
   color: var(--light-red);
+}
+
+.list, .list--icon {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list--icon li {
+  position: relative;
+  padding-left: 2rem;
+}
+.list--icon li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background: url(../../images/icon-check.svg) 0 center no-repeat;
 }
 
 .container {
