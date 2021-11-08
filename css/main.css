@@ -174,7 +174,7 @@ input[type=submit] {
 }
 
 .container {
-  max-width: 540px;
+  max-width: calc(540px + 4rem);
   margin: 0 auto;
   padding: 2rem;
 }
