@@ -39,7 +39,8 @@ const price = class {
   }
 
   get cost() {
-    return this.discount ? prices[this.option].cost * 0.75 : prices[this.option].cost;
+    const costCalc = this.discount ? prices[this.option].cost * 0.75 : prices[this.option].cost;
+    return `$${costCalc.toFixed(2)}`;
   }
 };
 
