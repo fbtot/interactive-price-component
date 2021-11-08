@@ -53,9 +53,15 @@ function offerSelected() {
   return priceRangeEl.value;
 }
 
-const offer = new price(offerSelected(), discountCheck());
+/* ========================== § UPDATE FUNCTION === */
+function updatePrice() {
+  const currentPrice = new price(offerSelected(), discountCheck());
+
+  console.log(currentPrice.cost);
+}
 
 /* ========================== § EVENT LISTENER SLIDER === */
 priceRangeEl.addEventListener("input", function () {
   console.log(priceRangeEl.value);
+  updatePrice();
 });
