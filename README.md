@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/interactive-price-component-with-vanilla-js-Ftd_G3yGc
+- Live Site URL: https://filippo-b.github.io/interactive-price-component/
 
 ## My process
 
@@ -32,8 +32,9 @@ Users should be able to:
 
 ### Useful resources
 
-- [How TO - TOggle Switch](https://www.w3schools.com/howto/howto_css_switch.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [How To - TOggle Switch](https://www.w3schools.com/howto/howto_css_switch.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [AAron Iker toggles](https://codepen.io/aaroniker/pen/ZEYoxEY) - Inspiration for toggle.
+- [Update a CSS variable with Javascript](https://css-tricks.com/updating-a-css-variable-with-javascript/)
 
 ## Author
 
