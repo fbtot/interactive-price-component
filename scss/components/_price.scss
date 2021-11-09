@@ -79,6 +79,13 @@
 @mixin slider-track() {
   @include circle();
   background: var(--light-grayish-blue);
+  /* prettier-ignore */
+  background: linear-gradient(
+    90deg, 
+    var(--soft-cyan) 0%, 
+    var(--soft-cyan) var(--gradient-slider-track), 
+    var(--light-grayish-blue) var(--gradient-slider-track), 
+    var(--light-grayish-blue) 100%);
   height: 0.5rem;
   -webkit-appearence: none;
 }

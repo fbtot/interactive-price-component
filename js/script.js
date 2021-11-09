@@ -60,12 +60,17 @@ function offerSelected() {
   return priceRangeEl.value;
 }
 
+/* ========================== § PERCENT SLIDER === */
+const numberOffers = priceRangeEl.max - priceRangeEl.min;
+const sliderPercent = () => (100 / numberOffers) * (offerSelected() - priceRangeEl.min);
+
 /* ========================== § UPDATE FUNCTION === */
 function updatePrice() {
   const currentPrice = new price(offerSelected(), discountCheck());
 
   pageviewsEl.innerText = currentPrice.pageviews;
   priceEl.innerText = currentPrice.cost;
+  document.documentElement.style.setProperty("--gradient-slider-track", sliderPercent() + "%");
 }
 
 updatePrice();
